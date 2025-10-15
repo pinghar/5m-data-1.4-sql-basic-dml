@@ -12,6 +12,7 @@ Paste the answer as SQL in the answer code section below each question.
 
 Select the minimum and maximum price per sqm of all the flats.
 
+
 ```sql
 
 ```
