@@ -13,9 +13,11 @@ Paste the answer as SQL in the answer code section below each question.
 Select the minimum and maximum price per sqm of all the flats.
 
 ```sql
-
+SELECT rfp.flat_type , MAX(rfp.floor_area_sqm), MIN(rfp.floor_area_sqm) 
+FROM main.resale_flat_prices_2017 rfp
+GROUP BY flat_type;
 ```
-
+Please refer to *[PictureQ1](https://www.markdownguide.org)* for the answer.
 ### Question 2
 
 Select the average price per sqm for flats in each town.
