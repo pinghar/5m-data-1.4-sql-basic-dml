@@ -48,7 +48,7 @@ FROM main.resale_flat_prices_2017 rfp
 GROUP BY p_r_category
 ORDER BY total_flat DESC;
 ```
-Please refer to *[PictureQ2](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ2(1.4).png)* for the answer.
+Please refer to *[PictureQ3](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ3(1.4).png)* for the answer.
 ### Question 4
 
 Count the number of flats sold in each town during the first quarter of 2017 (January to March).
