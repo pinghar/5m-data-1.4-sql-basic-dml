@@ -17,7 +17,7 @@ SELECT rfp.flat_type , MAX(rfp.floor_area_sqm), MIN(rfp.floor_area_sqm)
 FROM main.resale_flat_prices_2017 rfp
 GROUP BY flat_type;
 ```
-Please refer to *[PictureQ1](https://www.markdownguide.org)* for the answer.
+Please refer to *[PictureQ1]([https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ1(1.4).png])* for the answer.
 ### Question 2
 
 Select the average price per sqm for flats in each town.
