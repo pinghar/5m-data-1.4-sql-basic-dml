@@ -27,7 +27,7 @@ SELECT town,AVG(rfp.floor_area_sqm)
 FROM main.resale_flat_prices_2017 rfp
 GROUP BY rfp.town;
 ```
-Please refer to *[PictureQ2](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ1(1.4).png)* for the answer.
+Please refer to *[PictureQ2](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ2(1.4).png)* for the answer.
 ### Question 3
 
 Categorize flats into price ranges and count how many flats fall into each category:
