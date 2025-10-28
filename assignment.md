@@ -54,9 +54,13 @@ Please refer to *[PictureQ3](https://github.com/pinghar/5m-data-1.4-sql-basic-dm
 Count the number of flats sold in each town during the first quarter of 2017 (January to March).
 
 ```sql
-
+SELECT rfp.town  , rfp."month" ,
+COUNT(*) AS total_flat
+FROM main.resale_flat_prices_2017 rfp
+GROUP BY rfp.town , rfp."month"
+HAVING rfp."month" IN ('2017-01','2017-02','2017-03');
 ```
-
+Please refer to *[PictureQ3](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ3(1.4).png)* for the answer.
 ## Submission
 
 - Submit the URL of the GitHub Repository that contains your work to NTU black board.
