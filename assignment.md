@@ -38,9 +38,17 @@ Categorize flats into price ranges and count how many flats fall into each categ
   Show the counts in descending order.
 
 ```sql
-
+SELECT
+CASE 
+	WHEN resale_price < 400000 THEN 'Budget' 
+	WHEN resale_price BETWEEN 400000 AND 700000 THEN 'Mid-Range' WHEN resale_price > 700000 THEN 'Premium'
+END AS p_r_category,
+COUNT(*) AS total_flat
+FROM main.resale_flat_prices_2017 rfp
+GROUP BY p_r_category
+ORDER BY total_flat DESC;
 ```
-
+Please refer to *[PictureQ2](https://github.com/pinghar/5m-data-1.4-sql-basic-dml/blob/main/PictureforQ2(1.4).png)* for the answer.
 ### Question 4
 
 Count the number of flats sold in each town during the first quarter of 2017 (January to March).
